@@ -1,0 +1,155 @@
+baseURL: " https://jxmauricio.github.io/ProtfolioWebsite/"
+languageCode: "en-us"
+title: "John Mauricio Portfolio"
+theme: "./.."
+relativeURLs: true
+
+googleanalytics: UA-xxxxxx-x
+disqusShortname:
+Paginate: 3
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+enableEmoji: true
+params:
+  version: 3
+  customCSS: false
+
+  favicon: "/images/fav.png"
+  description: "A high performance hugo theme for personal portfolio and blog."
+
+  # Navbar Menus
+  # customMenus:
+  #   - name: "Blog"
+  #     Url: "/blog"
+
+  # home
+  disable_home: false
+  profile_image: "/images/profile.png"
+  name: "John Mauricio"
+  namecolor: ffc107
+  profession: "Aspiring Data Scientist!"
+  github: "https://github.com/jxmauricio"
+  #gitlab: "https://gitlab.com"
+  linkedin: "https://www.linkedin.com/in/john-mauricio-b427a4216/"
+  #twitter: "https://twitter.com/"
+  #instagram: "https://instagram.com/"
+  #facebook: "https://facebook.com"
+
+  # Custom social links
+  customSocialLinks:
+    #- imageURL: "https://hugo-profile.netlify.app/images/fav.png"
+    #  url: "https://gohugo.com"
+    - fontAwesomeIconName: "fa fa-envelope"
+      url: "https://gmail.com"
+
+  # About
+  disable_about: false
+  descripe_l1_person: "Hi, I'm John, a passionate Data Science Major. I enjoy working with data and analyzing them to make the world a slightly better place."
+  descripe_l2_person: "These are currently my most dominate technological skillsets. I am still in school so it is hard to do projects but I always try to do some on my free time. You can find my works [here](#projects)!"
+  skills:
+    - name: Python
+      percentage: 90
+    - name: Sklearn
+      percentage: 85
+    - name: Pandas
+      percentage: 80
+    - name: SQL
+      percentage: 70
+
+  # Experience
+  disable_experience: false
+  experience:
+    - company: "Data Science Student Society"
+      # id: "google-developer"   // use this, when you want to change the id(used for navigation)
+      role: "Social Events Lead"
+      startdate: Nov 2021
+      enddate: present
+      featuredpoints:
+        - point: Create events to help Data Science students connect.
+        - point: Manage and plan with other commitees to better Data Science students environment.
+    
+    - company: "DS3"
+      # id: "facebook-developer" // use this, when you want to change the id(used for navigation)
+      role: "Mentor"
+      startdate: Nov 2021
+      enddate: present
+      featuredpoints:
+        - point: Help guide new Data Science students with life at UCSD.
+        - point: Tutor mentees on projects they are currently doing.
+
+  # Education
+  disable_education: false
+  education:
+  
+    - degree: "High School Diploma"
+      branch: ""
+      university: "Deer Valley High School"
+      startedyear: "2015"
+      graduation: "2019"
+
+    - degree: "Data Science"
+      branch: "Halıcıoğlu Data Science Institute"
+      university: "University of California San Diego"
+      startedyear: "2019"
+      graduation: "present"
+
+
+  # Projects
+  disable_projects: false
+  projects:
+    - name: "NYPD Complainant Full Analysis Report"
+      img: "/images/nypd.jpg"
+      githublink: "https://github.com/jxmauricio"
+      featuredlink: "/"
+      description: "This project contains 12,000 civilian complaints against New York City Police Officers. My partner and I used Exploratory Data Analysis to formulate our 
+      hypothesis and used techniques such as Data Imputation before running permutation tests to draw conclusions. In the second part of the project we modeled a Decision Tree 
+      Classifier using feature engineering to predict if the complainants allegation towards the police officer were going to be successful or not. "
+    - name: "Stackoverflow Salary Prediction"
+      img: "/images/stack-overflow.jpg"
+      githublink: "https://github.com/jxmauricio"
+      featuredlink: "/"
+      description: "This project contains 49,000 software developers who have shared their salary. I first explored the data 
+      and cleaned the dataset to be able to be used for modeling. Then I used a Random Forest Regressor to predict the salaries of these developers
+      based on features such as 'years of experience'. Using the webapp streamlit I deployed the model enabling an average user to understand the model easily and also
+      input their own salaries to be predicted."
+
+  
+
+
+  # Achievements
+  disable_achievements: True
+  achievements:
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+      url: https://example.com
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+      # url: https://example.com
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+
+  # Contact
+  disable_contact: false
+  contact_content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+  email: "johnmauricio0308@gmail.com"
+
+  # Footer
+  socialiconfooter: true
+  recentposts: true
+
+  # Blog
+  showdescription: false
+  tweet: true
